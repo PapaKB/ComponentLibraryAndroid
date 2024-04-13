@@ -12,14 +12,11 @@ fun Modifier.conditional(
      * takes no arguments, operates on Modifier objects (or its subclasses), and returns a Modifier object
      */
     ifTrue: Modifier.() -> Modifier,
-    ifFalse: (Modifier.() -> Modifier)? = null
+    ifFalse: Modifier.() -> Modifier = { this }
 ): Modifier {
     return if (condition) {
         then(ifTrue(Modifier)) // applies ifTrue lambda to the modifier object
-    } else if (ifFalse != null) {
-        then(ifFalse(Modifier))
     } else {
-        this
+        then(ifFalse(Modifier))
     }
-
 }
