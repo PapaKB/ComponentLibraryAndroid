@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ComponentLibraryAndroid"
 include(":app")
+include(":component-library")

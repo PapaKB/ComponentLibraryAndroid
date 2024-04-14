@@ -1,4 +1,4 @@
-package com.example.componentlibraryandroid.components.button
+package com.example.component_library.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.componentlibraryandroid.utils.conditional
+import com.example.component_library.button.utils.conditional
 
 @Composable
 fun Button(
@@ -39,7 +39,10 @@ fun Button(
     showBackground = true, showSystemUi = true
 )
 fun ButtonPreview() {
-    Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.padding(10.dp)) {
+    Column(
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        modifier = Modifier.padding(10.dp)
+    ) {
         Button(
             label = "Button Name",
             onClick = { },

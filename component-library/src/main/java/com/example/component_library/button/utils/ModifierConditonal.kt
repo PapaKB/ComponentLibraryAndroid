@@ -1,4 +1,4 @@
-package com.example.componentlibraryandroid.utils
+package com.example.component_library.button.utils
 
 import androidx.compose.ui.Modifier
 
