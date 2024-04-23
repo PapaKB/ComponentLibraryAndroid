@@ -10,9 +10,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://jitpack.io")
+            credentials { username = System.getenv("JIT_TOKEN") }
+        }
     }
 }
 
 rootProject.name = "ComponentLibraryAndroid"
 include(":app")
-include(":component-library")
+include(":enigma-compose")

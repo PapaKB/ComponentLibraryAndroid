@@ -1,4 +1,4 @@
-package com.example.component_library.button
+package com.example.enigma_compose.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,10 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.component_library.button.utils.conditional
+import com.example.enigma_compose.utils.conditional
 
 @Composable
-fun Button(
+fun EButton(
     modifier: Modifier = Modifier,
     isFullWidth: Boolean = false,
     label: String,
@@ -38,21 +38,21 @@ fun Button(
 @Preview(
     showBackground = true, showSystemUi = true
 )
-fun ButtonPreview() {
+fun EnigmaButtonPreview() {
     Column(
         verticalArrangement = Arrangement.spacedBy(10.dp),
         modifier = Modifier.padding(10.dp)
     ) {
-        Button(
+        EButton(
             label = "Button Name",
             onClick = { },
         )
-        Button(
+        EButton(
             label = "full width",
             isFullWidth = true,
             onClick = { },
         )
-        Button(
+        EButton(
             label = "disabled",
             isEnabled = false,
             onClick = { },

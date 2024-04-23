@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.component_library"
+    namespace = "com.example.enigma_compose"
     compileSdk = 34
 
     defaultConfig {
@@ -58,7 +58,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.papakb"
-            artifactId = "component-library"
+            artifactId = "enigma-compose"
             version = "1.0"
 
             afterEvaluate {

@@ -1,4 +1,4 @@
-package com.example.component_library.button.utils
+package com.example.enigma_compose.utils
 
 import androidx.compose.ui.Modifier
 
