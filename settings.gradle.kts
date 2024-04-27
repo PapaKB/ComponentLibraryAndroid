@@ -18,5 +18,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ComponentLibraryAndroid"
-include(":app")
+if (System.getenv("JITPACK") !== "true") {
+    include(":app")
+}
 include(":enigma-compose")
